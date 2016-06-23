@@ -143,7 +143,7 @@ The [cssparser](https://github.com/onigetoc/Form-To-CSS---jQuery-Plugin-form-to-
 ## Demo:
 
 [https://jsfiddle.net/onigetoc/92fp0brf](https://jsfiddle.net/onigetoc/92fp0brf)
-[https://rawgit.com/onigetoc/FormToCSS/master/example/demo.html](https://jsfiddle.net/onigetoc/92fp0brf)](Full Page Demo)
+[https://rawgit.com/onigetoc/FormToCSS/master/example/demo.html](Full Page Demo)
 
 
 You can fork and help for this project.  
