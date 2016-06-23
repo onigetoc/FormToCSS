@@ -25,7 +25,9 @@ body {
 ```
 
 input name with h3[font-size]:px
-```<input type="text" class="form-control input-md" name="h3[font-size]:px" value="15" />```
+```html
+<input type="text" class="form-control input-md" name="h3[font-size]:px" value="15" />
+```
 
 CSS Output:
 
