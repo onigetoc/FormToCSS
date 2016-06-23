@@ -11,10 +11,14 @@ Create your own CSS generator with the **form to css** generator plugin.
 HTML form (input, textarea and select tags supported):  
 Read the [jQuery.serializeJSON](https://github.com/marioizquierdo/jquery.serializeJSON) for more details.   
 
-```<input type="text"name="body[background-color]" value="yellow">```
+```html
+<input type="text"name="body[background-color]" value="yellow">
+```
 
 input name with body[background-color]
-```<input type="text" name="body[background-color]" value="yellow">```
+```html
+<input type="text" name="body[background-color]" value="yellow">
+```
 
 CSS Output:
 
