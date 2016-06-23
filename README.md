@@ -46,8 +46,10 @@ CSS Output:
 ```
 
 
-All other input with the same selector will build your CSS: input name with h3[font-size]:px
-```<input type="text" class="form-control input-md" name=".firstclass[color]" value="#cccccc" />```
+Multiple input with the same selector will build your CSS:
+```<input type="text" class="form-control input-md" name=".firstclass[font-size]:px" value="#cccccc" />
+<input type="text" class="form-control input-md" name=".firstclass[color]" value="#cccccc" />
+```
 
 CSS Output:
 
