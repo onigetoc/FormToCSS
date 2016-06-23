@@ -79,7 +79,7 @@ CSS Output:
     color: red
 }
 ```
-user `:skip` or `anything:skip` to exclude input from being converted to CSS (from *   [jQuery.serializeJSON](https://github.com/marioizquierdo/jquery.serializeJSON#parse-values-with-types)) 
+user `:skip` or `anything:skip` to exclude input from being converted to CSS (from   [jQuery.serializeJSON](https://github.com/marioizquierdo/jquery.serializeJSON#parse-values-with-types)) 
 
 after the value, you can specify the following 
 `[]:px` `[]:em` `[]:%` `[]:important`
