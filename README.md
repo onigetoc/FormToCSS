@@ -80,6 +80,8 @@ CSS Output:
 }
 ```
 
+after the value, you can specify the following 
+`[]:px` `[]:em`
 
 # Using FormtoCSS function
 
