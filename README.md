@@ -13,20 +13,13 @@ I find out that when a page come in view it add 
 ```<input type="text"name="body[background-color]" value="yellow">```
 
 CSS output
-```
-body  {
-    background-color: yellow;
-}
-```
-
-
-Given the following style:
-
 ```css
-menu{color:red} navigation{background-color:#333}
+<input type="text"name="body[background-color]" value="yellow">
 ```
 
-CSS Beautify will produce:
+
+
+CSS Output:
 
 ```css
 menu {
