@@ -10,7 +10,7 @@ I find out that when a page come in view it add 
 
 **Demo Video**
 
-<code><input type="text"name="body[background-color]" value="yellow"></code>
+<code><input type="text"name="body[background-color]" value="yellow"></code> 
 
 `<input type="text"name="body[background-color]" value="yellow">`  
 
