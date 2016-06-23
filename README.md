@@ -81,7 +81,10 @@ CSS Output:
 ```
 user `:skip` or `anything:skip` to exclude input from being converted to CSS (from   [jQuery.serializeJSON](https://github.com/marioizquierdo/jquery.serializeJSON#parse-values-with-types)) 
 
-# You can add the following to your value (See example below)
+# add to value 
+
+_See example below_
+
 After the value, you can specify the following 
 
 `[]:px` `[]:em` `[]:percent` `[]:important` 
