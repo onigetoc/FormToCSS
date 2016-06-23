@@ -10,7 +10,7 @@ I find out that when a page come in view it add 
 
 **Demo Video**
 
-[youtube https://www.youtube.com/watch?v=EyC_8cHbYRo]
+<code>CSS output </code>
 
 * * *
 
