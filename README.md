@@ -38,7 +38,9 @@ h3 {
 ```
 
 For multiple class or ID since we use jQuery.serializeJSON, you can not separate selector with a comma, instead use | like the following example: input name with multiple selector .firstclass|secondClass[font-size]:px
-```<input type="text" class="form-control input-md" name=".firstclass|secondClass[font-size]:px" value="15" />```
+```html
+<input type="text" class="form-control input-md" name=".firstclass|secondClass[font-size]:px" value="15" />
+```
 
 CSS Output:
 
