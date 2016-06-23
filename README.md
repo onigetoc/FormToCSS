@@ -12,22 +12,16 @@ I find out that when a page come in view it add 
 
 ```<input type="text"name="body[background-color]" value="yellow">```
 
-CSS output
-```css
-<input type="text"name="body[background-color]" value="yellow">
+input name with [background-color]
 ```
-
-
+<input type="text" name="body[background-color]" value="yellow">
+```
 
 CSS Output:
 
 ```css
 menu {
-    color: red
-}
-
-navigation {
-    background-color: #333
+    background-color: yellow
 }
 ```
 
