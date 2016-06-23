@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <title>jQuery Plugin Form To CSS - form to CSS generator</title>
+
+    <!--  -->
+
+    <style>
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                <form class="form-horizontal formClass">
+                    <!--<form class="form-inline formClass"> -->
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <h3>Form to CSS</h3>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Body Background: </label>
+                            <div class="col-md-8">
+                                <input type="text" id="bodycolor" name="body[background-color]" placeholder="placeholder" value="yellow" class="form-control input-md">
+                                <span class="help-block">name="body[background-color]"</span>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">H3 Background Color:</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control input-md" name="h3[background-color]" value="#fff" />
+                                <span class="help-block">name="h3[background-color]" value="#fff"</span>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Class .container font-size</label>
+                            <div class="col-md-8">
+                                <input type="number" class="form-control input-md" max="20" min="1" name=".container[font-size]:px" value="14" />
+                                <span class="help-block">name=".container[font-size]:px"</span>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Exclude this input: excluded:skip</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control input-md" name="excluded:skip" value="Use :skip to not include this field in the result" />
+                                <span class="help-block">name="excluded:skip"</span>
+                            </div>
+                        </div>
+
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="selectbasic">Select Basic</label>
+                            <div class="col-md-8">
+                                <select class="form-control" id="selectbasic" name=".test[font-size]:px">
+                                    <option value="1">Option one</option>
+                                    <option value="2">Option two</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Select Multiple -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="selectmultiple">Select Multiple</label>
+                            <div class="col-md-8">
+                                <select class="form-control" id="selectmultiple" multiple="multiple" name=".test[font-size]:px">
+                                    <option value="1">Option one</option>
+                                    <option value="2">Option two</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Multiple Checkboxes (inline) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Inline Checkboxes</label>
+                            <div class="col-md-8">
+                                <label class="checkbox-inline" for="checkboxes-0">
+                                    <input type="checkbox" name=".checkbox[display]" id="checkboxes-0" value="1"> 1
+                                </label>
+                                <label class="checkbox-inline" for="checkboxes-1">
+                                    <input type="checkbox" name=".checkbox[display]" id="checkboxes-1" value="2"> 2
+                                </label>
+                                <label class="checkbox-inline" for="checkboxes-2">
+                                    <input type="checkbox" name=".checkbox[display]" id="checkboxes-2" value="3"> 3
+                                </label>
+                                <label class="checkbox-inline" for="checkboxes-3">
+                                    <input type="checkbox" name=".checkbox[display]" id="checkboxes-3" value="4"> 4
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Multiple Radios (inline) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Inline Radios</label>
+                            <div class="col-md-8">
+                                <label class="radio-inline" for=".checkbox[display]-0">
+                                    <input type="radio" name=".checkbox[display]" id=".checkbox[display]" value="block" checked="checked"> block
+                                </label>
+                                <label class="radio-inline" for=".checkbox[display]-1">
+                                    <input type="radio" name=".checkbox[display]" id=".checkbox[display]" value="inline-block"> inline-block
+                                </label>
+                                <label class="radio-inline" for=".checkbox[display]-2">
+                                    <input type="radio" name=".checkbox[display]" id=".checkbox[display]" value="none"> none
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Range slider input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Range Slider Change buttons border Radius:
+                            </label>
+                            <div class="col-md-8">
+                                <input max="20" min="0" name=".btn.btn-primary|.btn.btn-info[border-radius]:px" step="1" type="range" value="5" />
+                                <span class="help-block">name=".btn.btn-primary|.btn.btn-info[border-radius]:px"</span>
+                            </div>
+                        </div>
+                        <hr />
+                        <!-- Button Submit test -->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="button1id">Real Test Buttons</label>
+                            <div class="col-md-12">
+                                <div class="clearfix">
+                                    <button class="btn btn-primary" id="btnSerialize" type="button">serializeToJSON Form To CSS</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+            </div>
+
+            <div class="col-sm-6">
+
+                <h4>Result: Real time in <code>pre</code></h4>
+                <pre></pre>
+                <!-- Textarea -->
+                <div class="form-group">
+                    <label class="col-md-12 control-label">CSS result</label>
+                    <div class="col-md-12">
+                        <textarea class="form-control" rows="10" id="result" name="textarea:skip">.anotherClass { top: 4em; border-radius: 5px; font-size: 5px; color: rgba(0,255,0,0.3) !important }</textarea>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <textarea id="addcss" style="display:none;">
+                .addcssFromhiddenTexarea {top: 5px;} #morecss{font-size: 15px;}
+            </textarea>
+
+            <a href="https://github.com/marioizquierdo/jquery.serializeJSON" target="_blank">jQuery serializeJSON</a>
+            <br>
+            <a href="http://stackoverflow.com/questions/1212500/create-a-css-rule-class-with-jquery-at-runtime/29307266#29307266" target="_blank">create-a-css-rule-class-with-jquery-at-runtime</a>
+            <br>
+            <a href="http://codepen.io/tejasukmana/pen/NrrQGN" target="_blank">CSS beautifier minifier:</a>
+            <br>
+            <a href="http://bootsnipp.com/forms" target="_blank">Form created with Bootstrap for builder:</a>
+            <p>
+                <p />
+
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+                <script src="https://cdn.rawgit.com/marioizquierdo/jquery.serializeJSON/master/jquery.serializejson.min.js"></script>
+                <script src="https://cdn.rawgit.com/senchalabs/cssbeautify/master/cssbeautify.js"></script>
+                <script src="../js/formtocss.js"></script>
+                <script src="../js/cssParser.js"></script>
+                <!--            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+
+                <script>
+                    /*************************/
+                    /**** CALL fortoCSS PLUGIN ****/
+                    $(".formClass").formtoCSS({
+                        beautify: true,
+                        prefix: true,
+                        addcss: '#addcss', // add more css from #addcss hidden textarea
+                        output: 'pre,#result'
+                    });
+
+                </script>
+
+</body>
+
+</html>
