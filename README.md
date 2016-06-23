@@ -81,7 +81,7 @@ CSS Output:
 ```
 
 after the value, you can specify the following 
-`[]:px` `[]:em`
+`[]:px` `[]:em` `[]:%` `[]:important`
 
 # Using FormtoCSS function
 
