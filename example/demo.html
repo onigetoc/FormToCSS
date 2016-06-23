@@ -23,19 +23,19 @@
 
         <div class="row">
             <div class="col-sm-6">
+                <h2>Form to CSS</h2>
 
-                <form class="form-horizontal formClass">
+                <form class="form-horizontal formClass well well-small">
                     <!--<form class="form-inline formClass"> -->
                     <fieldset>
 
                         <!-- Form Name -->
-                        <h3>Form to CSS</h3>
 
                         <!-- Text input-->
                         <div class="form-group">
                             <label class="col-md-4 control-label">Body Background: </label>
                             <div class="col-md-8">
-                                <input type="text" id="bodycolor" name="body[background-color]" placeholder="placeholder" value="yellow" class="form-control input-md">
+                                <input type="text" id="bodycolor" name="body[background-color]" placeholder="placeholder" value="#feb" class="form-control input-md">
                                 <span class="help-block">name="body[background-color]"</span>
                             </div>
                         </div>
@@ -136,9 +136,8 @@
                         <hr />
                         <!-- Button Submit test -->
                         <div class="form-group">
-                            <label class="col-md-12 control-label" for="button1id">Real Test Buttons</label>
                             <div class="col-md-12">
-                                <div class="clearfix">
+                                <div class="clearfix text-right">
                                     <button class="btn btn-primary" id="btnSerialize" type="button">serializeToJSON Form To CSS</button>
                                 </div>
                             </div>
@@ -151,11 +150,11 @@
 
             <div class="col-sm-6">
 
-                <h4>Result: Real time in <code>pre</code></h4>
+                <h2>Result: Real time in <code>pre</code></h2>
                 <pre></pre>
                 <!-- Textarea -->
                 <div class="form-group">
-                    <label class="col-md-12 control-label">CSS result</label>
+                    <h2 class="col-md-12 control-label">CSS result in real time</h2>
                     <div class="col-md-12">
                         <textarea class="form-control" rows="10" id="result" name="textarea:skip">.anotherClass { top: 4em; border-radius: 5px; font-size: 5px; color: rgba(0,255,0,0.3) !important }</textarea>
                     </div>
