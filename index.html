@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Formtocss by onigetoc</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Formtocss</h1>
+        <h2>Form To CSS - jQuery-Plugin form to CSS generator - Create CSS from html form https://jsfiddle.net/onigetoc/92fp0brf</h2>
+        <a href="https://github.com/onigetoc/FormToCSS" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="form-to-css-generator--jquery-plugin-form-to-css-generator" class="anchor" href="#form-to-css-generator--jquery-plugin-form-to-css-generator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Form to CSS generator | jQuery Plugin form to CSS generator</h1>
+
+<p>Create your own CSS generator with the <strong>form to css</strong> generator plugin.</p>
+
+<hr>
+
+<p><img src="https://raw.githubusercontent.com/onigetoc/Form-To-CSS---jQuery-Plugin-form-to-CSS-generator/master/screenshot1.png" alt="">  </p>
+
+<h1>
+<a id="why" class="anchor" href="#why" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Why</h1>
+
+<p>I wanted to create my own CSS generator for a project with a form that update dynamically the css. I looked to some other project and i didn't liked the fact to write a lot of codes and i came up with a idea to create a form who automatically convert to CSS.</p>
+
+<h1>
+<a id="usage-example" class="anchor" href="#usage-example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage example</h1>
+
+<p>HTML form (input, textarea and select tags supported):<br>
+Read the <a href="https://github.com/marioizquierdo/jquery.serializeJSON">jQuery.serializeJSON</a> for more details.   </p>
+
+<p>input name with body[background-color]</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>body[background-color]<span class="pl-pds">"</span></span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>yellow<span class="pl-pds">"</span></span>&gt;</pre></div>
+
+<p>CSS Output:</p>
+
+<div class="highlight highlight-source-css"><pre><span class="pl-ent">body</span> {
+    <span class="pl-c1"><span class="pl-c1">background-color</span></span>: <span class="pl-c1">yellow</span>
+}</pre></div>
+
+<p>input name with h3[font-size]:px</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>h3[font-size]:px<span class="pl-pds">"</span></span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>15<span class="pl-pds">"</span></span> /&gt;</pre></div>
+
+<p>CSS Output:</p>
+
+<div class="highlight highlight-source-css"><pre><span class="pl-ent">h3</span> {
+    <span class="pl-c1"><span class="pl-c1">font-size</span></span>: <span class="pl-c1">15<span class="pl-k">px</span></span>
+}</pre></div>
+
+<p>For multiple class or ID since we use jQuery.serializeJSON, you can not separate selector with a comma, instead use | like the following example: input name with multiple selector .firstclass|secondClass[font-size]:px</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>.firstclass|secondClass[font-size]:px<span class="pl-pds">"</span></span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>15<span class="pl-pds">"</span></span> /&gt;</pre></div>
+
+<p>CSS Output:</p>
+
+<div class="highlight highlight-source-css"><pre><span class="pl-e">.firstclass</span>, <span class="pl-e">.secondClass</span> {
+    <span class="pl-c1"><span class="pl-c1">font-size</span></span>: <span class="pl-c1">15<span class="pl-k">px</span></span>
+}</pre></div>
+
+<p>Multiple input with the same selector will build your CSS:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>number<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>.firstclass[font-size]:px<span class="pl-pds">"</span></span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>15<span class="pl-pds">"</span></span> <span class="pl-e">min</span>=<span class="pl-s"><span class="pl-pds">"</span>1<span class="pl-pds">"</span></span> <span class="pl-e">max</span>=<span class="pl-s"><span class="pl-pds">"</span>20<span class="pl-pds">"</span></span> /&gt;
+&lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>.firstclass[color]<span class="pl-pds">"</span></span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>#cccccc<span class="pl-pds">"</span></span> /&gt; </pre></div>
+
+<p>CSS Output:</p>
+
+<div class="highlight highlight-source-css"><pre><span class="pl-e">.firstclass</span> {
+    <span class="pl-c1"><span class="pl-c1">font-size</span></span>: <span class="pl-c1">15<span class="pl-k">px</span></span>;
+    <span class="pl-c1"><span class="pl-c1">color</span></span>: <span class="pl-c1">#cccccc</span>;
+}</pre></div>
+
+<p>Since jQuery.serializeJSON do not take the : as a selector, we replace : by @ input name with #myID@hover[color]
+It may change in the futur if i can implement CSS media queries.</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>#myID@hover[color]<span class="pl-pds">"</span></span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>red<span class="pl-pds">"</span></span> /&gt;</pre></div>
+
+<p>CSS Output:</p>
+
+<div class="highlight highlight-source-css"><pre><span class="pl-e">#myID</span><span class="pl-e">:hover</span> {
+    <span class="pl-c1"><span class="pl-c1">color</span></span>: <span class="pl-c1">red</span>
+}</pre></div>
+
+<p>user <code>:skip</code> or <code>anything:skip</code> to exclude input from being converted to CSS (from   <a href="https://github.com/marioizquierdo/jquery.serializeJSON#parse-values-with-types">jQuery.serializeJSON</a>) </p>
+
+<h1>
+<a id="adding-units-to-value" class="anchor" href="#adding-units-to-value" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Adding units to value</h1>
+
+<p>After the value, you can specify units to value</p>
+
+<p><code>[]:px</code> <code>[]:em</code> <code>[]:percent</code> <code>[]:important</code> </p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>.myclass[padding]:em<span class="pl-pds">"</span></span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>2<span class="pl-pds">"</span></span> /&gt;</pre></div>
+
+<p>percent for %</p>
+
+<p>important for !important</p>
+
+<h1>
+<a id="using-formtocss-function" class="anchor" href="#using-formtocss-function" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using FormtoCSS function</h1>
+
+<p>Call the function this way. You can use a Class, ID or form</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>.formClass<span class="pl-pds">"</span></span>).<span class="pl-en">formtoCSS</span>();</pre></div>
+
+<h3>
+<a id="with-all-options" class="anchor" href="#with-all-options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>With all options:</h3>
+
+<p>Example call with all options:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>.formClass<span class="pl-pds">"</span></span>).<span class="pl-en">formtoCSS</span>({  
+beautify<span class="pl-k">:</span> <span class="pl-c1">false</span>, <span class="pl-c">// default true  </span>
+prefix<span class="pl-k">:</span> <span class="pl-c1">false</span>, <span class="pl-c">// css3 -webkit, -moz: default true  </span>
+addcss<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>#addcss<span class="pl-pds">'</span></span>, <span class="pl-c">// add more css from #addcss hidden textarea  </span>
+output<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>pre,#result<span class="pl-pds">'</span></span>, <span class="pl-c">// output CSS results, single or multiple selector(s)  </span>
+header<span class="pl-k">:</span> <span class="pl-c1">false</span> <span class="pl-c">// add css to header in realtime: default true  </span>
+});</pre></div>
+
+<h3>
+<a id="tricks" class="anchor" href="#tricks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tricks:</h3>
+
+<p>Sometime you need to append something to your input and formtoCSS did not update your CSS.</p>
+
+<p>try <code>.keyup():</code></p>
+
+<p><code>$("#targetInput").val('#f43').keyup();</code></p>
+
+<p>You can use hidden input and do create CSS with the right name informations</p>
+
+<h2>
+<a id="dependency" class="anchor" href="#dependency" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dependency</h2>
+
+<p>Form to CSS need these javascript and jQuery plugins to work.</p>
+
+<ul>
+<li>  <a href="https://github.com/marioizquierdo/jquery.serializeJSON">jQuery.serializeJSON</a>
+</li>
+<li>  <a href="https://github.com/senchalabs/cssbeautify">cssbeautify</a>
+</li>
+</ul>
+
+<p>The cssparser add css3 prefix like -moz | -webkit<br>
+The <a href="https://github.com/onigetoc/Form-To-CSS---jQuery-Plugin-form-to-CSS-generator/blob/master/js/cssParser.js">cssparser</a> need to be rewrite. I found it on the web and it's not perfect.</p>
+
+<h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo:</h2>
+
+<p><a href="https://jsfiddle.net/onigetoc/92fp0brf">https://jsfiddle.net/onigetoc/92fp0brf</a></p>
+
+<p>You can fork and help for this project.  </p>
+
+<hr>
+
+<p>Markdown created with <a href="http://editconvert.com/">Editconvert</a></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/onigetoc/FormToCSS/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/onigetoc/FormToCSS/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/onigetoc/FormToCSS"></a> is maintained by <a href="https://github.com/onigetoc">onigetoc</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
