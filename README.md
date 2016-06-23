@@ -66,11 +66,15 @@ CSS Output:
 
 Call the function this way. You can use a Class, ID or form
 
-`$(".formClass").formtoCSS();`
+```javascript 
+$(".formClass").formtoCSS();
+```
 
 ### With all options:
 
-```
+Example call:
+
+```javascript
 $(".formClass").formtoCSS({  
 beautify: true, //   default true  
 prefix: true, // default true  
@@ -79,6 +83,7 @@ output: 'pre,#result' // // output CSS results, single or multiple selector(s)
 header: true // add css to header in realtime: default true  
 });
 ```
+
 
 ## Dependency
 
