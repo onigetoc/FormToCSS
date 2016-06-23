@@ -47,9 +47,7 @@ CSS Output:
 
 
 Multiple input with the same selector will build your CSS:
-```<input type="text" class="form-control input-md" name=".firstclass[font-size]:px" value="#cccccc" />
-<input type="text" class="form-control input-md" name=".firstclass[color]" value="#cccccc" />
-```
+```<input type="text" class="form-control input-md" name=".firstclass[font-size]:px" value="#cccccc" /><input type="text" class="form-control input-md" name=".firstclass[color]" value="#cccccc" /> ``` 
 
 CSS Output:
 
