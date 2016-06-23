@@ -97,7 +97,9 @@ Form to CSS need these javascript and jQuery plugins to work.
 The cssparser add css3 prefix like -moz | -webkit  
 The [cssparser](https://github.com/onigetoc/Form-To-CSS---jQuery-Plugin-form-to-CSS-generator/blob/master/js/cssParser.js) need to be rewrite. I found it on the web and it's not perfect.
 
-Demo: [https://jsfiddle.net/onigetoc/92fp0brf](https://jsfiddle.net/onigetoc/92fp0brf)[](https://jsfiddle.net/onigetoc/92fp0brf)
+## Demo:
+
+[https://jsfiddle.net/onigetoc/92fp0brf](https://jsfiddle.net/onigetoc/92fp0brf)
 
 You can fork and help for this project.  
 
