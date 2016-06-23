@@ -83,11 +83,13 @@ user `:skip` or `anything:skip` to exclude input from being converted to CSS (fr
 
 # Adding units to value 
 
-_See example below_
-
-After the value, you can specify the following 
+After the value, you can specify units to value
 
 `[]:px` `[]:em` `[]:percent` `[]:important` 
+
+```html
+<input type="text" name=".myclass[padding]:em" value="2" />
+```
 
 percent for %
 
