@@ -115,7 +115,7 @@ Sometime you need to append something to your input and formtoCSS did not update
 
 try `.keyup():`
 
-`$("#targetIput").val('#f43').keyup();`
+`$("#targetInput").val('#f43').keyup();`
 
 ## Dependency
 
