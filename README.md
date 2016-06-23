@@ -117,6 +117,8 @@ try `.keyup():`
 
 `$("#targetInput").val('#f43').keyup();`
 
+You can use hidden input and do create CSS with the right name informations
+
 ## Dependency
 
 Form to CSS need these javascript and jQuery plugins to work.
