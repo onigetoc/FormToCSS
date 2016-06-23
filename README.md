@@ -81,7 +81,7 @@ CSS Output:
 ```
 user `:skip` or `anything:skip` to exclude input from being converted to CSS (from   [jQuery.serializeJSON](https://github.com/marioizquierdo/jquery.serializeJSON#parse-values-with-types)) 
 
-# add to value 
+# Adding units to value 
 
 _See example below_
 
