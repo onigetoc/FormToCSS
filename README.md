@@ -83,8 +83,10 @@ user `:skip` or `anything:skip` to exclude input from being converted to CSS (fr
 
 after the value, you can specify the following 
 `[]:px` `[]:em` `[]:percent` `[]:important` 
-`percent for %` 
-`important for !important`
+
+percent for %
+
+important for !important
 
 # Using FormtoCSS function
 
