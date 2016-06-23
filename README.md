@@ -61,6 +61,25 @@ CSS Output:
     color: #cccccc;
 }
 ```
+
+# Using FormtoCSS function
+
+Call the function this way. You can use a Class, ID or form
+
+`$(".formClass").formtoCSS();`
+
+### With all options:
+
+```
+$(".formClass").formtoCSS({  
+beautify: true, //   default true  
+prefix: true, // default true  
+addcss: '#addcss', // add more css from #addcss hidden textarea  
+output: 'pre,#result' // // output CSS results, single or multiple selector(s)  
+header: true // add css to header in realtime: default true  
+});
+```
+
 ## Dependency
 
 Form to CSS need these javascript and jQuery plugins to work.
