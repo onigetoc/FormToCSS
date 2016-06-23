@@ -6,9 +6,10 @@ Create your own CSS generator with the **form to css** generator plugin.
 
 ![](https://raw.githubusercontent.com/onigetoc/Form-To-CSS---jQuery-Plugin-form-to-CSS-generator/master/screenshot1.png)  
 
-I find out that when a page come in view it add 
+# Usage example
 
-**Demo Video**
+HTML form (input, textarea and select tags supported):  
+Read the jQuery.serializeJSON for more details.  
 
 ```<input type="text"name="body[background-color]" value="yellow">```
 
@@ -48,7 +49,7 @@ CSS Output:
 
 Multiple input with the same selector will build your CSS:
 ```
-<input type="text" class="form-control input-md" name=".firstclass[font-size]:px" value="#cccccc" />
+<input type="text" class="form-control input-md" name=".firstclass[font-size]:px" value="#15" />
 <input type="text" class="form-control input-md" name=".firstclass[color]" value="#cccccc" /> 
 ``` 
 
@@ -60,14 +61,19 @@ CSS Output:
     color: #cccccc;
 }
 ```
+## Dependency
 
+Form to CSS need these javascript and jQuery plugins to work.
 
+*   [jQuery.serializeJSON](https://github.com/marioizquierdo/jquery.serializeJSON)
+*   [cssbeautify](https://github.com/senchalabs/cssbeautify)
 
+The cssparser add css3 prefix like -moz | -webkit  
+The [cssparser](https://github.com/onigetoc/Form-To-CSS---jQuery-Plugin-form-to-CSS-generator/blob/master/js/cssParser.js) need to be rewrite. I found it on the web and it's not perfect.
 
+Demo: [https://jsfiddle.net/onigetoc/92fp0brf](https://jsfiddle.net/onigetoc/92fp0brf)[](https://jsfiddle.net/onigetoc/92fp0brf)
 
-* * *
-
-You can fork and help for this project. I need a direct install script in PHP.
+You can fork and help for this project.  
 
 * * *
 
