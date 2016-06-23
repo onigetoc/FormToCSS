@@ -75,8 +75,8 @@ It may change in the futur if i can implement CSS media queries.
 CSS Output:
 
 ```css
-h3 {
-    font-size: 15px
+#myID:hover {
+    color: red
 }
 ```
 
