@@ -78,10 +78,10 @@ Example call:
 
 ```javascript
 $(".formClass").formtoCSS({  
-beautify: true, //   default true  
-prefix: true, // default true  
+beautify: true, // default true  
+prefix: true, // default true  
 addcss: '#addcss', // add more css from #addcss hidden textarea  
-output: 'pre,#result' // // output CSS results, single or multiple selector(s)  
+output: 'pre,#result', // output CSS results, single or multiple selector(s)  
 header: true // add css to header in realtime: default true  
 });
 ```
