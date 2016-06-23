@@ -12,7 +12,7 @@ I find out that when a page come in view it add 
 
 ```<input type="text"name="body[background-color]" value="yellow">```
 
-
+CSS output
 ```
 body  {
     background-color: yellow;
