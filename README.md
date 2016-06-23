@@ -12,20 +12,53 @@ I find out that when a page come in view it add 
 
 ```<input type="text"name="body[background-color]" value="yellow">```
 
-input name with [background-color]
-```
-<input type="text" name="body[background-color]" value="yellow">
-```
+input name with body[background-color]
+```<input type="text" name="body[background-color]" value="yellow">```
 
 CSS Output:
 
 ```css
-menu {
+body {
     background-color: yellow
 }
 ```
 
-T
+input name with h3[font-size]:px
+```<input type="text" class="form-control input-md" name="h3[font-size]:px" value="15" />```
+
+CSS Output:
+
+```css
+h3 {
+    font-size: 15px
+}
+```
+
+For multiple class or ID since we use jQuery.serializeJSON, you can not separate selector with a comma, instead use | like the following example: input name with multiple selector .firstclass|secondClass[font-size]:px
+```<input type="text" class="form-control input-md" name=".firstclass|secondClass[font-size]:px" value="15" />```
+
+CSS Output:
+
+```css
+.firstclass, .secondClass {
+    font-size: 15px
+}
+```
+
+
+All other input with the same selector will build your CSS: input name with h3[font-size]:px
+```<input type="text" class="form-control input-md" name=".firstclass[color]" value="#cccccc" />```
+
+CSS Output:
+
+```css
+.firstclass {
+    font-size: 15px;
+    color: #cccccc;
+}
+```
+
+
 
 
 
