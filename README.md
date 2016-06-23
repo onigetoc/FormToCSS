@@ -114,6 +114,7 @@ header: false // add css to header in realtime: default true
 Sometime you need to append something to your input and formtoCSS did not update your CSS.
 
 try `.keyup():`
+
 `$("#targetIput").val('#f43').keyup();`
 
 ## Dependency
