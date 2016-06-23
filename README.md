@@ -26,7 +26,7 @@ body {
 
 input name with h3[font-size]:px
 ```html
-<input type="text" class="form-control input-md" name="h3[font-size]:px" value="15" />
+<input type="text" name="h3[font-size]:px" value="15" />
 ```
 
 CSS Output:
@@ -39,7 +39,7 @@ h3 {
 
 For multiple class or ID since we use jQuery.serializeJSON, you can not separate selector with a comma, instead use | like the following example: input name with multiple selector .firstclass|secondClass[font-size]:px
 ```html
-<input type="text" class="form-control input-md" name=".firstclass|secondClass[font-size]:px" value="15" />
+<input type="text" name=".firstclass|secondClass[font-size]:px" value="15" />
 ```
 
 CSS Output:
@@ -53,8 +53,8 @@ CSS Output:
 
 Multiple input with the same selector will build your CSS:
 ```html
-<input type="text" class="form-control input-md" name=".firstclass[font-size]:px" value="#15" />
-<input type="text" class="form-control input-md" name=".firstclass[color]" value="#cccccc" /> 
+<input type="number" name=".firstclass[font-size]:px" value="15" min="1" max="20" />
+<input type="text" name=".firstclass[color]" value="#cccccc" /> 
 ``` 
 
 CSS Output:
