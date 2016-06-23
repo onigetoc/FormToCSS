@@ -10,15 +10,20 @@ I find out that when a page come in view it add 
 
 **Demo Video**
 
-`<input type="text"name="body[background-color]" value="yellow">`
+```<input type="text"name="body[background-color]" value="yellow">```
 
 CSS output
 
-`body {
+```body {
+    background-color: yellow1;
+}
+```
 
-    background-color: yellow;
+```body {
 
-}`
+    background-color: yellow2;
+
+}```
 
 * * *
 
