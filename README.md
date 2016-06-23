@@ -20,6 +20,28 @@ body  {
 ```
 
 
+Given the following style:
+
+```css
+menu{color:red} navigation{background-color:#333}
+```
+
+CSS Beautify will produce:
+
+```css
+menu {
+    color: red
+}
+
+navigation {
+    background-color: #333
+}
+```
+
+T
+
+
+
 * * *
 
 You can fork and help for this project. I need a direct install script in PHP.
