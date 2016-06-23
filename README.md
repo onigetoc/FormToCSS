@@ -66,6 +66,21 @@ CSS Output:
 }
 ```
 
+Since jQuery.serializeJSON do not take the : as a selector, we replace : by @ input name with #myID@hover[color]
+It may change in the futur if i can implement CSS media queries.
+```html
+<input type="text" name="#myID@hover[color]" value="red" />
+```
+
+CSS Output:
+
+```css
+h3 {
+    font-size: 15px
+}
+```
+
+
 # Using FormtoCSS function
 
 Call the function this way. You can use a Class, ID or form
