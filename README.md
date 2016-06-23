@@ -6,6 +6,10 @@ Create your own CSS generator with the **form to css** generator plugin.
 
 ![](https://raw.githubusercontent.com/onigetoc/Form-To-CSS---jQuery-Plugin-form-to-CSS-generator/master/screenshot1.png)  
 
+# Why?
+
+I wanted to create my own CSS generator for a project with a form that update dynamically the css. I looked to some other project and i didn't liked the fact to write a lot of codes and i came up with a idea to create a form who automatically convert to CSS.
+
 # Usage example
 
 HTML form (input, textarea and select tags supported):  
