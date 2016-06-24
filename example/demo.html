@@ -211,8 +211,8 @@
 
                     $("#resetform").on("click", function() {
                         $(".formClass")[0].reset();
+                        $(".formClass input:first").keyup(); //keyup to trigger the change
                         //OR input ID like: $("#bodycolor").keyup(); //keyup to trigger the change
-                        //$(".formClass input:first").keyup(); //keyup to trigger the change
                     })
 
                     // Trick: Trigger change on load or anytime value on .val ect with keyup():
