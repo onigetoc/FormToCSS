@@ -73,7 +73,7 @@
                             <div class="col-md-8">
                                 <select class="form-control" id="selectbasic" name=".well[border-width]:pximportant">
                                     <option value="1" selected>Border width Default 1px</option>
-                                    <option value="3">Border width 3px</option>
+                                    <option value="3" selected>Border width 3px</option>
                                     <option value="5">Border width 5px</option>
                                 </select>
                                 <span class="help-block">name=".well[border-width]:pximportant"</span>
@@ -84,10 +84,10 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="selectmultiple">Select Multiple</label>
                             <div class="col-md-8">
-                                <select class="form-control" id="selectmultiple" multiple="multiple" name=".test2[font-size]:px">
-                                    <option value="16" selected>.test2 font-size 16px</option>
-                                    <option value="18">.test2 font-size 18px</option>
-                                    <option value="20">.test2 font-size 20px</option>
+                                <select class="form-control" id="selectmultiple" multiple="multiple" name=".well[border-style]">
+                                    <option value="solid" selected>.well border-style solid</option>
+                                    <option value="dashed">.well border-style dashed</option>
+                                    <option value="dotted">.well border-style dotted</option>
                                 </select>
                             </div>
                         </div>
@@ -206,6 +206,11 @@
 
 
                     /************************* JQUERY CODE TO DO OTHERS THINGS AND TRICKS ************************/
+
+                    // Not required, trigger form on form parameter on page load
+                    $(document).ready(function() {
+                        $(".formClass input:first").keyup();
+                    });
 
                     /**** RESET FORM ****/
 
