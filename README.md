@@ -3,7 +3,7 @@
 Create your own CSS generator with the **form to css** generator plugin.
 
 * * *
-[Demo page | build A CSS generator in minutes:](https://rawgit.com/onigetoc/FormToCSS/master/example/demo.html)
+[Demo page | build A CSS generator like this in minutes:](https://rawgit.com/onigetoc/FormToCSS/master/example/demo.html)
 
 ![](https://raw.githubusercontent.com/onigetoc/Form-To-CSS---jQuery-Plugin-form-to-CSS-generator/master/screenshot1.png)  
 
