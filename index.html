@@ -129,11 +129,13 @@ It may change in the futur if i can implement CSS media queries.</p>
 <p>Example call with all options:</p>
 
 <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>.formClass<span class="pl-pds">"</span></span>).<span class="pl-en">formtoCSS</span>({  
-beautify<span class="pl-k">:</span> <span class="pl-c1">false</span>, <span class="pl-c">// default true  </span>
-prefix<span class="pl-k">:</span> <span class="pl-c1">false</span>, <span class="pl-c">// css3 -webkit, -moz: default true  </span>
-addcss<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>#addcss<span class="pl-pds">'</span></span>, <span class="pl-c">// add more css from #addcss hidden textarea  </span>
-output<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>pre,#result<span class="pl-pds">'</span></span>, <span class="pl-c">// output CSS results, single or multiple selector(s)  </span>
-header<span class="pl-k">:</span> <span class="pl-c1">false</span> <span class="pl-c">// add css to header in realtime: default true  </span>
+    beautify<span class="pl-k">:</span> <span class="pl-c1">false</span>, <span class="pl-c">// default true  </span>
+    prefix<span class="pl-k">:</span> <span class="pl-c1">false</span>, <span class="pl-c">// css3 -webkit, -moz: default true </span>
+    target<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>#targetDIV<span class="pl-pds">'</span></span>, <span class="pl-c">// target effected selector, single or multiple selector(s)</span>
+    targetShow<span class="pl-k">:</span> <span class="pl-c1">true</span>,  <span class="pl-c">// show target selector in css output result ex: #mytargetdiv: default false</span>
+    addcss<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>#addcss<span class="pl-pds">'</span></span>, <span class="pl-c">// add more css from #addcss hidden textarea  </span>
+    output<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>pre,#result<span class="pl-pds">'</span></span>, <span class="pl-c">// output CSS results, single or multiple selector(s)  </span>
+    header<span class="pl-k">:</span> <span class="pl-c1">false</span> <span class="pl-c">// add css to header in realtime: default true  </span>
 });</pre></div>
 
 <h3>
@@ -166,6 +168,8 @@ The <a href="https://github.com/onigetoc/Form-To-CSS---jQuery-Plugin-form-to-CSS
 <a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo:</h2>
 
 <p><a href="https://jsfiddle.net/onigetoc/92fp0brf">https://jsfiddle.net/onigetoc/92fp0brf</a></p>
+
+<p><a href="https://rawgit.com/onigetoc/FormToCSS/master/example/demo.html">Full page demo</a></p>
 
 <p>You can fork and help for this project.  </p>
 
