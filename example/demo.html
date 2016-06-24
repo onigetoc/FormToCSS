@@ -138,6 +138,7 @@
                         <div class="form-group">
                             <div class="col-md-12">
                                 <div class="clearfix text-right">
+                                    <button class="btn btn-info" id="resetform" type="button">Reset form</button>
                                     <button class="btn btn-primary" id="btnSerialize" type="button">serializeToJSON Form To CSS</button>
                                 </div>
                             </div>
@@ -196,7 +197,17 @@
                         addcss: '#addcss', // add more css from #addcss hidden textarea
                         output: 'pre,#result'
                     });
+                    /*******************************/
 
+
+                    /************************* JQUERY CODE TO DO OTHERS THINGS AND TRICKS ************************/
+
+                    /**** RESET FORM ****/
+
+                    $("#resetform").on("click", function() {
+                        $(".formClass")[0].reset();
+                        $(".formClass input:first").keyup(); //keyup to trigger the change
+                    })
 
                     // Trick: Trigger change on load or anytime value on .val ect with keyup():
                     //$("#bodycolor").val('#f43').keyup();
