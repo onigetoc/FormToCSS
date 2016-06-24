@@ -1,4 +1,4 @@
-# Form to CSS generator | jQuery Plugin form to CSS generator Builder
+# Form to CSS generator Builder | jQuery Plugin
 
 Create your own CSS generator with the **form to css** generator plugin.
 
