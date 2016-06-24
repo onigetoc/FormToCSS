@@ -72,8 +72,8 @@
                             <label class="col-md-4 control-label" for="selectbasic">Select Basic</label>
                             <div class="col-md-8">
                                 <select class="form-control" id="selectbasic" name=".well[border-width]:pximportant">
-                                    <option value="1" selected>Border width Default 1px</option>
-                                    <option value="3">Border width 3px</option>
+                                    <option value="1">Border width Default 1px</option>
+                                    <option value="3" selected>Border width 3px</option>
                                     <option value="5">Border width 5px</option>
                                 </select>
                                 <span class="help-block">name=".well[border-width]:pximportant"</span>
@@ -84,11 +84,12 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="selectmultiple">Select Multiple</label>
                             <div class="col-md-8">
-                                <select class="form-control" id="selectmultiple" multiple="multiple" name=".test2[font-size]:px">
-                                    <option value="16" selected>.test2 font-size 16px</option>
-                                    <option value="18">.test2 font-size 18px</option>
-                                    <option value="20">.test2 font-size 20px</option>
+                                <select class="form-control" id="selectmultiple" multiple="multiple" name=".well[border-style]">
+                                    <option value="solid" selected>border-style solid</option>
+                                    <option value="dashed">border-style dashed</option>
+                                    <option value="dotted">border-style dotted</option>
                                 </select>
+                                <span class="help-block">name=".well[border-style]"</span>
                             </div>
                         </div>
 
@@ -203,6 +204,13 @@
                         output: 'pre,#result'
                     });
                     /*******************************/
+
+
+                    //FormtoCSS is already called, but it do not trigger automatically the form on load.
+                    // You can Trigger the input style FormToCSS on page Load
+                    $(document).ready(function() {
+                        $(".formClass input:first").keyup();
+                    });
 
 
                     /************************* JQUERY CODE TO DO OTHERS THINGS AND TRICKS ************************/
