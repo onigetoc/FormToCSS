@@ -7,7 +7,7 @@
             // These are the defaults.
             target: '', // target effected selector, single or multiple selector(s)
             targetShow: false, // show target selector in css result ex: #mytargetdiv
-            output: '', // output CSS results, single or multiple selector(s)
+            output: '', // output CSS output results, single or multiple selector(s)
             adcss: '', // // add more css from selector hidden textarea
             beautify: true,
             prefix: true, // css3 webkit, moz
