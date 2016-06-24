@@ -85,9 +85,9 @@
                             <label class="col-md-4 control-label" for="selectmultiple">Select Multiple</label>
                             <div class="col-md-8">
                                 <select class="form-control" id="selectmultiple" multiple="multiple" name=".test2[font-size]:px">
-                                    <option value="16" selected>16px</option>
-                                    <option value="18">18px</option>
-                                    <option value="20">20px</option>
+                                    <option value="16" selected>.test2 font-size 16px</option>
+                                    <option value="18">.test2 font-size 18px</option>
+                                    <option value="20">.test2 font-size 20px</option>
                                 </select>
                             </div>
                         </div>
@@ -211,7 +211,8 @@
 
                     $("#resetform").on("click", function() {
                         $(".formClass")[0].reset();
-                        $(".formClass input:first").keyup(); //keyup to trigger the change
+                        //OR input ID like: $("#bodycolor").keyup(); //keyup to trigger the change
+                        //$(".formClass input:first").keyup(); //keyup to trigger the change
                     })
 
                     // Trick: Trigger change on load or anytime value on .val ect with keyup():
