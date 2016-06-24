@@ -1,6 +1,6 @@
 # Form to CSS generator Builder | jQuery Plugin
 
-Create your own CSS generator with the **form to css** generator plugin.
+Create your own CSS generator with the **form to css** generator Builder plugin.
 
 * * *
 [Demo page | build A CSS generator like this in minutes:](https://rawgit.com/onigetoc/FormToCSS/master/example/demo.html)
@@ -90,7 +90,7 @@ user `:skip` or `anything:skip` to exclude input from being converted to CSS (fr
 
 After the value, you can specify units to value
 
-`[]:px` `[]:em` `[]:percent` `[]:important` 
+`[]:px` `[]:em` `[]:percent` `[]:important`  `[]:pximportant`  `[]:emimportant`  `[]:percentimportant` 
 
 ```html
 <input type="text" name=".myclass[padding]:em" value="2" />
