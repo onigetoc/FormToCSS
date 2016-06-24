@@ -113,11 +113,13 @@ Example call with all options:
 
 ```javascript
 $(".formClass").formtoCSS({  
-beautify: false, // default true  
-prefix: false, // css3 -webkit, -moz: default true  
-addcss: '#addcss', // add more css from #addcss hidden textarea  
-output: 'pre,#result', // output CSS results, single or multiple selector(s)  
-header: false // add css to header in realtime: default true  
+    beautify: false, // default true  
+    prefix: false, // css3 -webkit, -moz: default true 
+    target: '#targetDIV', // target effected selector, single or multiple selector(s)
+    targetShow: true,  // show target selector in css result ex: #mytargetdiv: default false
+    addcss: '#addcss', // add more css from #addcss hidden textarea  
+    output: 'pre,#result', // output CSS results, single or multiple selector(s)  
+    header: false // add css to header in realtime: default true  
 });
 ```
 
