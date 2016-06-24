@@ -95,6 +95,11 @@ After the value, you can specify units to value
 ```html
 <input type="text" name=".myclass[padding]:em" value="2" />
 ```
+OR
+
+```html
+<input type="text" name=".myclass[padding]:emimportant" value="2" />
+```
 
 percent for %
 
