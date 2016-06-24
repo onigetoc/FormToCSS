@@ -17,7 +17,7 @@
         var elem = $(this);
         var elemSelector = elem.selector;
 
-        $(elemSelector + " input").on("change keyup paste", function () {
+        $(elemSelector + " input," + elemSelector + " select").on("change keyup paste", function () {
             FormToJSON();
         })
         $(elemSelector + " input[type=range]").on("mousemove", function () {
@@ -69,8 +69,14 @@
                     important: function (str) { // value is always a string
                         return str + " !important";
                     },
-                    string: function (str) { // all strings will now end with " override"
-                        return str + " override";
+                    pximportant: function (str) { // all strings will now end with " override"
+                        return str + "px !important";
+                    },
+                    emimportant: function (str) { // all strings will now end with " override"
+                        return str + "em !important";
+                    },
+                    percentimportant: function (str) { // all strings will now end with " override"
+                        return str + "% !important";
                     }
                 }
 
