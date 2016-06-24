@@ -5,8 +5,7 @@
         // This is the easiest way to have default options.
         var opts = $.extend({
             // These are the defaults.
-            target: '', // target effected selector, single or multiple selector(s)
-            targetShow: false, // show target selector in css result ex: #mytargetdiv
+            target: '', // effected selector, single or multiple selector(s)
             output: '', // output CSS results, single or multiple selector(s)
             adcss: '', // // add more css from selector hidden textarea
             beautify: true,
@@ -80,22 +79,6 @@
             console.log(obj);
             console.log(JSON.stringify(obj));
 
-
-            if (opts.target) {
-
-                Object.keys(obj).forEach(function (key) {
-                    //console.log(key + ': ' + obj[key]);
-                    //console.log(key.replace(key, "#mainID "+ key));  
-                    //key = key.replace(/\|/g, "|#mainID "+ key);
-                    var newkey = opts.target + " " + key;
-                    obj[newkey] = obj[key];
-                    delete obj[key];
-                });
-
-            }
-
-            //var targetbody = opts.target + " body";
-
             // GC .replace Object to CSS
             var css;
             css = JSON.stringify(obj);
@@ -103,8 +86,7 @@
             css = css.replace(/"/g, "")
                 .replace(/,/g, ";")
                 .replace(/@/g, ":") // special replace @ for :
-                .replace(/\|/g, "," + opts.target + " ") // special replace | for ,
-                .replace(opts.target + " body", "body") // special replace for body ,
+                .replace(/\|/g, ",") // special replace | for ,
                 .replace(/:{/g, "{")
                 .replace(/};/g, "}")
                 // https://regex101.com/r/eE6cF9/9
@@ -123,23 +105,7 @@
                 css = beautifyCSS(css);
             }
 
-            var reg = '';
-
-
-            reg = new RegExp(opts.target, "g");
-            if (opts.target && (opts.targetShow == false)) {
-
-                cssResult = css.replace(reg, "");
-            } else if (opts.target && (opts.targetShow == true)) {
-                cssResult = css;
-            } else {
-                cssResult = css;
-            }
-
-            //alert(opts.target);
-            //cssResult = css.replace(/\#mainID /g, "");
-
-            $(opts.output).html(cssResult); // .val .text .html ALL WORKING?
+            $(opts.output).html(css); // .val .text .html ALL WORKING?
 
             //var el = opts.target;
             //if (el[0].value !== undefined) {
@@ -149,7 +115,6 @@
             //}
 
             if (opts.header === true) {
-
                 var style_tag = '<style id="formtocss-styles" type="text/css">' + css + '</style>';
                 $('#formtocss-styles').replaceWith(style_tag);
             }
