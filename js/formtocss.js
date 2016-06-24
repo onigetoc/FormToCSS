@@ -19,7 +19,7 @@
 
         $(elemSelector + " input," + elemSelector + " select").on("change keyup paste", function () {
             FormToJSON();
-        })
+        });
         $(elemSelector + " input[type=range]").on("mousemove", function () {
             FormToJSON();
         });
@@ -52,7 +52,7 @@
 
                 return val;
 
-            }
+            };
 
             var obj = elem.serializeJSON({
                 parseWithFunction: ftcssfunction,
@@ -159,7 +159,7 @@
                 $('#formtocss-styles').replaceWith(style_tag);
             }
 
-        };
+        }
 
         /* FormToJSON END */
 
@@ -185,7 +185,7 @@
             if (sheet)
                 return sheet.cssText();
             else
-                return ""
+                return "";
         }
 
     };
