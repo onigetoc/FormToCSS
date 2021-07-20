@@ -3,7 +3,7 @@
 Create your own CSS generator with the **form to css** generator Builder plugin. Can be usefull to create your own css builder or a Wordpress plugin or any kind of apps you need a real time css generator. For example, you can create a button generator
 
 * * *
-[Demo page | build A CSS generator like this in minutes:](https://rawgit.com/onigetoc/FormToCSS/master/example/demo.html)
+[Demo page | build A CSS generator like this in minutes:](https://gitcdn.xyz/cdn/onigetoc/FormToCSS/601091988830ad4bcbb63db8df7a1cdb5ff9652e/example/demo.html)
 
 ![](https://raw.githubusercontent.com/onigetoc/Form-To-CSS---jQuery-Plugin-form-to-CSS-generator/master/screenshot1.png)  
 
